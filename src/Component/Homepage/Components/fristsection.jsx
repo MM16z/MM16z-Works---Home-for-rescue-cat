@@ -18,7 +18,9 @@ function Fristsection() {
         <div id="contact">Contact Us</div>
       </div>
       <div className="images">
-        <img id="mainlogo" src="/logo.png"></img>
+        <div className="mainlogo-container">
+          <img id="mainlogo" src="/logo.png"></img>
+        </div>
       </div>
       <div className="texts">
         <div id="txtid1">

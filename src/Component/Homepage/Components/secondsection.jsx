@@ -37,6 +37,9 @@ function Secondsection() {
   const [matches1, setMatches1] = useState(
     window.matchMedia("(min-width: 600px) and (max-width: 899px)").matches
   );
+  const [matches2, setMatches2] = useState(
+    window.matchMedia("(min-width: 0px) and (max-width: 425px)").matches
+  );
   const [imgWidth, setimgWidth] = useState({
     width1: "",
     height1: "",
@@ -50,7 +53,7 @@ function Secondsection() {
     } else {
       setimgWidth({ width1: "37vw", height1: "27vw" });
     }
-  }, [matches, matches1]);
+  }, [matches]);
   useEffect(() => {
     window
       .matchMedia("(min-width: 600px) and (max-width: 899px)")
@@ -59,6 +62,14 @@ function Secondsection() {
       setimgWidth({ width1: "330px", height1: "230px" });
     }
   }, [matches1]);
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 0px) and (max-width: 425px)")
+      .addEventListener("change", (e) => setMatches2(e.matches));
+    if (matches2) {
+      setimgWidth({ width1: "80vw", height1: "60vw" });
+    }
+  }, []);
 
   return (
     <div className="home-second-section">
@@ -95,22 +106,24 @@ function Secondsection() {
         <img className="caticon" id="caticonId9" src="/icon2.png"></img>
       </div>
       <div className="images">
-        <SimpleImageSlider
-          width={imgWidth.width1}
-          height={imgWidth.height1}
-          images={images}
-          showBullets={true}
-          showNavs={true}
-          style={{
-            borderRadius: "80px",
-            position: "absolute",
-            bottom: "15vh",
-            left: "4.25vw",
-            zIndex: "2",
-          }}
-          autoPlay={true}
-          autoPlayDelay={4.0}
-        />
+        <div className="images-slider-container">
+          <SimpleImageSlider
+            width={imgWidth.width1}
+            height={imgWidth.height1}
+            images={images}
+            showBullets={true}
+            showNavs={true}
+            style={{
+              borderRadius: "80px",
+              position: "absolute",
+              bottom: "15vh",
+              left: "4.25vw",
+              zIndex: "2",
+            }}
+            autoPlay={true}
+            autoPlayDelay={4.0}
+          />
+        </div>
       </div>
       <footer className="footer">
         <div id="footerId1">&#169; 2022 MM16z. All rights reserved."</div>

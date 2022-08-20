@@ -9,6 +9,29 @@
   width: 100%;
   height: 100vh;
 }
+#ourcats {
+  font-family: "Comfortaa", cursive;
+  cursor: pointer;
+  position: absolute;
+  font-size: 2vw;
+  color: black;
+  top: 0vw;
+  left: 7vw;
+  transition: 0.5s;
+}
+#ourcats:hover {
+  font-size: 1.5vw;
+  /* padding-left: 3vw; */
+  margin-left: 3vw;
+  top: -0.2vw;
+}
+#ourcats-o-letter {
+  position: relative;
+  font-size: 3.5vw;
+  font-family: "Catty";
+  top: 0.1vw;
+  left: 0.1vw;
+}
 #canvasid1 {
   z-index: 3;
   position: absolute;
@@ -36,11 +59,11 @@
     rgba(79, 40, 0, 1) 40%,
     rgba(28, 15, 1, 1) 100%
   );
-  width: 30vw;
+  width: 28vw;
   height: 0.35vw;
   top: 0vh;
   margin-top: 2.1vw;
-  left: 52vw;
+  left: 53.9vw;
   border-radius: 16px;
 }
 #canvasid5 {
@@ -61,41 +84,20 @@
   left: 97.6vw;
   border-radius: 16px;
 }
+.mainlogo-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
 #mainlogo {
   position: absolute;
   width: 4vw;
   height: 4vw;
   top: 0.5vw;
-  left: 47vw;
+  /* left: 47vw; */
   opacity: 0.9;
-}
-#menubtn:hover {
-  top: -1vw;
-  left: 0vw;
-  width: 6vw;
-  height: 6vw;
-}
-#ourcats {
-  font-family: "Comfortaa", cursive;
-  cursor: pointer;
-  position: absolute;
-  font-size: 2vw;
-  color: black;
-  top: 0vw;
-  left: 7vw;
-  transition: 0.5s;
-}
-#ourcats:hover {
-  font-size: 1.5vw;
-  padding-left: 3vw;
-  top: -0.2vw;
-}
-#ourcats-o-letter {
-  position: relative;
-  font-size: 3.5vw;
-  font-family: "Catty";
-  top: 0.1vw;
-  left: 0.1vw;
 }
 #aboutus {
   font-family: "Comfortaa", cursive;
@@ -268,11 +270,132 @@
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 424px) {
+@media screen and (min-width: 0px) and (max-width: 426px) {
   /* Normal @Mobile size */
+  #ourcats {
+    font-size: 4vw;
+    top: 0vw;
+    left: 82vw;
+  }
+  #ourcats:hover {
+    font-size: 4vw;
+    margin-left: -3vw;
+    top: 0;
+  }
+  #ourcats-o-letter {
+    font-size: 6.5vw;
+    top: 0.1vw;
+    left: 0.1vw;
+  }
+  #canvasid1 {
+    width: 24vw;
+    height: 1vw;
+    top: 0vh;
+    margin-top: 5.7vw;
+    left: 18vw;
+  }
+  #canvasid2 {
+    width: 18vw;
+    height: 1vw;
+    top: 0vh;
+    margin-top: 5.7vw;
+    left: 57.9vw;
+  }
+  #canvasid5 {
+    width: 1.2vw;
+    height: 101vh;
+    top: 18vw;
+    left: inherit;
+    right: 5vw;
+  }
+  #mainlogo {
+    width: 12vw;
+    height: 12vw;
+    top: 0.5vw;
+  }
+  #aboutus {
+    font-size: 4vw;
+    top: 4.5vw;
+    right: 1.6vw;
+  }
+  #aboutus:hover {
+    font-size: 4vw;
+    padding-right: 3vw;
+    top: 4.5vw;
+  }
+  #aboutus-a-letter {
+    font-size: 6.5vw;
+  }
+  #contact {
+    font-size: 3.1vw;
+    letter-spacing: 0.1vw;
+    top: 11vw;
+    right: 2vw;
+    transition: 1s;
+  }
+  #contact:hover {
+    font-size: 3.1vw;
+    padding-right: 6.5vw;
+  }
+  #txtid1 {
+    font-size: 10.4vw;
+    top: 14.5vw;
+    left: 8vw;
+  }
+  #txtid2 {
+    font-size: 10.4vw;
+    top: 23.5vw;
+    left: 13.5vw;
+  }
+  #txtid3 {
+    font-size: 10.4vw;
+    top: 32.5vw;
+    left: 2.8vw;
+  }
+  #txtid4 {
+    font-size: 5.4vw;
+    top: 42.8vw;
+    left: 20.1vw;
+  }
+  #txtid4-1 {
+    font-size: 5.3vw;
+    letter-spacing: 0.1vw;
+  }
+  #txtid5 {
+    font-size: 2.8vw;
+    top: 53vw;
+    left: 49vw;
+  }
+  #txtid6 {
+    font-size: 2.8vw;
+    top: 94.8vw;
+    left: 54.6vw;
+  }
+  #txtid7 {
+    font-size: 4.8vw;
+    top: inherit;
+    bottom: 12vw;
+    left: 4.5vw;
+    inline-size: 89vw;
+  }
+  #background2 {
+    width: 55vw;
+    height: auto;
+    top: 0vh;
+    margin-top: 57vw;
+    left: 30vw;
+  }
+  #background3 {
+    width: 45vw;
+    height: auto;
+    left: 8vw;
+    top: 0vh;
+    margin-top: 85vw;
+  }
+  
 }
 
-@media screen and (min-width: 425px) and (max-width: 499px) {
+@media screen and (min-width: 427px) and (max-width: 499px) {
   /* Bigest @Mobile size */
   #txtid6 {
     font-size: 2vw;

@@ -15,6 +15,12 @@
   left: 1vw;
   transition: 1s;
 }
+#menubtn:hover {
+  top: -1vw;
+  left: 0vw;
+  width: 6vw;
+  height: 6vw;
+}
 #background1 {
   z-index: 8;
   position: absolute;
@@ -27,14 +33,62 @@
   opacity: 0.4;
 }
 #navigateicon {
+  pointer-events: none;
   z-index: 12;
   position: absolute;
   background-image: url("/icon1.png");
   width: 3vw;
   height: 3vw;
-  left: 47.5vw;
+  left: 48.5vw;
   bottom: 0.8vh;
   background-size: contain;
   animation: nevigationanim 10s infinite linear,
     nevigationanim1 10s infinite linear;
+}
+
+@media screen and (min-width: 0px) and (max-width: 424px) {
+  /* Normal @Mobile size */
+  #menubtn {
+    width: 17vw;
+    height: 17vw;
+    top: -2vw;
+    left: 0vw;
+  }
+  #menubtn:hover {
+    width: 19vw;
+    height: 19vw;
+    top: -4vw;
+    left: -1vw;
+  }
+  #background1 {
+    width: 95vw;
+    height: auto;
+    min-width: inherit;
+    bottom: 0vh;
+    left: 0vw;
+  }
+  #navigateicon {
+    width: 10vw;
+    height: 10vw;
+    left: 45vw;
+    bottom: 0.8vh;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 499px) {
+  /* Bigest @Mobile size */
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+  /* Smallest @Desktop size , SM Tablet*/
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  /*  SM,Normal Tablet*/
+}
+
+@media screen and (min-width: 900px) and (max-width: 1439px) {
+}
+
+@media screen and (min-width: 1440px) {
 }
