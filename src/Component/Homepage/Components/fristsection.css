@@ -374,7 +374,8 @@
   #txtid7 {
     font-size: 4.8vw;
     top: inherit;
-    bottom: 12vw;
+    bottom: 0vh;
+    margin-bottom: 14vw;
     left: 4.5vw;
     inline-size: 89vw;
   }
@@ -392,7 +393,6 @@
     top: 0vh;
     margin-top: 85vw;
   }
-  
 }
 
 @media screen and (min-width: 427px) and (max-width: 499px) {
